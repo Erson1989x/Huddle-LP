@@ -12,7 +12,8 @@ body {
     font-size: 16px;
     background-color: hsl(0, 0%, 100%);
     color: hsl(192, 100%, 9%);
-    min-height: 100vh;
+    width: 100%;
+    height: 100vh;
 }
 
 /*-- Header --*/
@@ -91,11 +92,19 @@ body {
 }
 
 .mockups-img {
+    background-image: url('./images/screen-mockups.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 296px;
     height: 209px;
-}
+  }
+  
 
 @media screen and (min-width: 1024px) {
+    .section-header {
+        padding: 4.87rem 3.75rem 4.87rem 5rem;
+    }
     .logo {
         width: 15rem;
         height: 2.37rem;
