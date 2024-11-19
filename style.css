@@ -104,11 +104,11 @@ body {
 
 .mockups-img {
     background-image: url('./images/screen-mockups.svg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 296px;
-    height: 209px;
+    width: 100%;
+    height: 100%;
   }
 
 /*-- Communities --*/
@@ -210,6 +210,31 @@ body {
     padding-inline: 1.25rem;
   }
 
+/*-- Your Users --*/
+
+.section-users {
+    width: 100%;
+    height: auto;
+    padding-top: 7.5rem;
+}
+
+.top-bg-users {
+    background-image: url('./images/bg-section-top-mobile-2.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+    height: 100px;
+}
+
+.bottom-bg-users {
+    background-image: url('./images/bg-section-bottom-mobile-2.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 100px;
+}
 
 
   
@@ -248,11 +273,6 @@ body {
         padding: 1.56rem 6.25rem;
         font-size: 1rem;
         border-radius: 2rem;
-    }
-
-    .mockups-img {
-        width: 1016px;
-        height: 720px;
     }
 
     /*-- Communities --*/
@@ -315,5 +335,15 @@ body {
     .section-flowing {
         padding-top: 8.3rem;
         padding-inline: 7.5rem;
+    }
+
+    /*-- Your Users --*/
+
+    .top-bg-users {
+        background-image: url('./images/bg-section-top-desktop-2.svg');
+    }
+
+    .bottom-bg-users {
+        background-image: url('./images/bg-section-bottom-desktop-2.svg');
     }
 }
