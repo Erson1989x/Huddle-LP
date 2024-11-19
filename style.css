@@ -269,6 +269,7 @@ body {
   justify-content: center;
   gap: 6.5rem;
   padding-top: 6.5rem;
+  padding-bottom: 3rem;
 }
 
 .newsletter {
@@ -354,6 +355,16 @@ a {
   margin-right: 1rem;
 }
 
+.social-media {
+    margin-top: 3rem;
+}
+
+.social-media-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 1rem;
+}
+
 @media screen and (min-width: 1024px) {
   /*-- Header --*/
   .section-header {
@@ -415,10 +426,12 @@ a {
 
   .top-bg {
     background-image: url("./images/bg-section-top-desktop-1.svg");
+    height: 200px;
   }
 
   .bottom-bg {
     background-image: url("./images/bg-section-bottom-desktop-1.svg");
+    height: 200px;
   }
 
   .grow-container {
@@ -455,9 +468,40 @@ a {
 
   .top-bg-users {
     background-image: url("./images/bg-section-top-desktop-2.svg");
+    height: 200px;
   }
 
   .bottom-bg-users {
     background-image: url("./images/bg-section-bottom-desktop-2.svg");
+    height: 200px;
+  }
+
+  /*-- Footer --*/
+
+  .top-bg-footer {
+    background-image: url("./images/bg-footer-top-desktop.svg");
+    height: 200px;
+  }
+
+  .footer-container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-inline: 7.5rem;
+    gap: 22rem;
+  }
+
+  .social-media-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+
+  .newsletter-title {
+    font-size: 1.5rem;
+  }
+
+  .newsletter-input {
+    flex-direction: row;
+    gap: 2.5rem;
   }
 }
