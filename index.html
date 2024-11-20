@@ -122,7 +122,7 @@
           />
         </div>
         <div class="grow-texts">
-          <h2 class="grow-title">Grow Together</h2>
+          <h2 class="grow-title">Your Users</h2>
           <p class="grow-text">
             Generate meaningful discussions with your audience and build a
             strong, loyal community. Think of the insightful conversations you
@@ -141,16 +141,22 @@
     <footer>
       <div class="top-bg-footer"></div>
       <div class="footer-container">
-      <div class="newsletter">
-        <h2 class="newsletter-title">Newslatter</h2>
-        <p class="newsletter-text">
-          To recieve tips on how to grow your comminity, sign up to our weekly
-          newsletter. We'll never send you spam or pass on your email address
-        </p>
-        <div class="newsletter-input">
-          <input class="newsletter-email" type="email" />
-          <button>Subscribe</button>
-        </div>
+        <div class="newsletter">
+          <h2 class="newsletter-title">Newsletter</h2>
+          <p class="newsletter-text">
+              To receive tips on how to grow your community, sign up to our weekly
+              newsletter. We'll never send you spam or pass on your email address
+          </p>
+          <form class="newsletter-input" onsubmit="return false;">
+              <input 
+                  class="newsletter-email" 
+                  type="email" 
+                  required
+                  aria-label="Email address"
+                  placeholder="email@example.com"
+              />
+              <button type="submit">Subscribe</button>
+          </form>
       </div>
       <div class="footer-bottom">
         <img class="footer-logo" src="./images/logo.svg" alt="" />
