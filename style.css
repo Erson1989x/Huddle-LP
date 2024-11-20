@@ -24,6 +24,7 @@ body {
   --white: hsl(0, 0%, 100%);
   --gray: #808e9a;
   --snow-white: #ffffff;
+  --green: #1ac888;
 }
 
 /*-- Header --*/
@@ -552,3 +553,34 @@ a {
 .newsletter-email:valid {
   border-color: var(--green);
 }
+
+/*-- Animation --*/
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-header-content > *,
+.communities,
+.grow-container > *,
+.flowing-container > *,
+.section-users > *,
+.section-end-content > * {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Add different delays for children elements */
+.section-header-content > *:nth-child(1) { animation-delay: 0.4s; }
+.section-header-content > *:nth-child(2) { animation-delay: 0.6s; }
+.section-header-content > *:nth-child(3) { animation-delay: 0.8s; }
+
+.communities:nth-child(1) { animation-delay: 0.5s; }
+.communities:nth-child(2) { animation-delay: 0.7s; }
