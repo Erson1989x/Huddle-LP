@@ -532,3 +532,23 @@ a {
   transform: scale(1.2);
   filter:brightness(1.2);
 }
+
+/*-- Form validation --*/
+
+.newsletter-email {
+  padding: 0 1rem;
+  outline: none;
+  border: 2px solid transparent;
+}
+
+.newsletter-email:focus {
+  border-color: var(--pink);
+}
+
+.newsletter-email:invalid {
+  border-color: var(--light-red);
+}
+
+.newsletter-email:valid {
+  border-color: var(--green);
+}
